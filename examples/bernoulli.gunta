@@ -1,0 +1,9 @@
+info "Calculate the likelyhood of an event with a fixed probablity occuring "
+     "after n tries.";
+
+get "Probability of the event (between 0 and 1)" p;
+get "How many tries?" n;
+
+prob = (1-p)^n;
+
+put "Likelyhood" 1 - prob

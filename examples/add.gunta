@@ -1,0 +1,5 @@
+info "Add two numbers.";
+get "First number" a;
+get "Second number" b;
+
+put "Result" (a + b)

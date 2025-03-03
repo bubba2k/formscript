@@ -1,0 +1,13 @@
+# Program to calculate the volume and surface area of a cylinder
+
+info "This program calculates the volume and surface area of a cylinder.";
+
+get "Height of the cylinder" h;
+get "Radius of base" r;
+
+curved_surface = 2 * PI * r * h;
+base_surface   = 2 * (PI * r^2);
+
+put "Volume of the cylinder"		   h * PI * r^2;
+put "Surface area of the cylinder" curved_surface + base_surface;
+
