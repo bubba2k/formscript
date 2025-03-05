@@ -1,0 +1,12 @@
+info "Calculate velocity and distance travelled of a uniformly "
+     "accelerated object after a certain timespan.";
+
+get "Starting velocity (m/s)" v;
+get "Acceleration (m/s^2)" a;
+get "Elapsed time (s)"    t;
+
+v' = v + a * t;
+s  = (a / 2) * t^2 + v * t;
+
+put "New velocity (m/s)" v';
+put "Distance travelled (m)" s;

@@ -1,0 +1,11 @@
+# Calculate the cutoff frequency of a RC lowpass filter.
+
+get "Resistance (Ohm)" R;
+get "Capacitance (microFarad)" C;
+
+# microFarad to Farad
+C = C / 1000000;
+
+freq = 1 / (2 * PI * R * C);
+
+put "Cutoff (Hz)" freq;
