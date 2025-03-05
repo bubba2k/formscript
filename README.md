@@ -9,7 +9,7 @@ Suppose we want to calculate the volume and surface area of a cylinder (or many)
 This is quickly implemented in FormScript:
 
 ```python
-# Optional info print
+# cylinder.fsc
 info "This program calculates the volume and surface area of a cylinder.";
 
 get "Height of the cylinder" h;
@@ -25,7 +25,7 @@ put "Surface area of the cylinder" curved_surface + base_surface;
 Running this script with the interpreter yields the output: 
 
 ```
-$ FormScript cylinder.gunta
+$ formscript cylinder.fsc
 This program calculates the volume and surface area of a cylinder.
 ?- Height of the cylinder: 10
 ?- Radius of base: 4
@@ -47,7 +47,7 @@ Prints the given string to the terminal, much like a usual `printLn` function, e
 info "This program calculates the volume and surface area of a cylinder.";
 ```
 #### 2. `get` statement
-Prompts the user for a number and assigns it to the given variable.  Eg:
+Prompts the user for a number and assigns it to the given variable, eg:
 ```py
 get "Height of the cylinder" h;
 ```
