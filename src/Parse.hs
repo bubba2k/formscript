@@ -19,7 +19,7 @@ def = emptyDef{ commentStart = ""
               , commentEnd = ""
               , commentLine = "#"
               , identStart = letter
-              , identLetter = alphaNum <|> char '_'
+              , identLetter = alphaNum <|> char '_' <|> char '\''
               , opStart  = oneOf "+-*^"
               , opLetter = oneOf "+-*^"
               , reservedOpNames = ["+", "-", "*", "/", "^" ]
