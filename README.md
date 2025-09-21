@@ -1,11 +1,10 @@
 # FormScript
 
-FormScript is an interpreted domain specific language for creating simple 
-interactive calculator programs on the CLI, with emphasis on easy I/O handling.
+FormScript is an interpreted domain specific language for creating simple (non-branching) CLI calculator scripts.
 
 ## Overview
 
-Suppose we want to calculate the volume and surface area of a cylinder (or many).
+Suppose we need to calculate the volume and surface area of a cylinder (... or many different cylinders).
 This is quickly implemented in FormScript:
 
 ```python
